@@ -1,5 +1,6 @@
 from config import app
+from flask import render_template
 
 @app.route("/")
 def home():
-    return "Flask is working";
+    return render_template("index.html")
