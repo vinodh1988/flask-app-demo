@@ -1,10 +1,14 @@
 <html>
     <head>
         <title> Home page -Flask </title>
+<link href={{url_for('static',filename="bootstrap/css/bootstrap.min.css")}} rel="stylesheet">
+<script src="{{ url_for('static', filename='jquery.js') }}"></script>
+<script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
     </head>
     <body>
+    <div class="alert alert-info">
            <h1> Flask page is up and running </h1>
            {{author}}
-          
+    </div>  
     </body>
 </html>
