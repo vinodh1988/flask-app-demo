@@ -12,7 +12,8 @@
            {{name}}
     </div>  
     <h3> Register yourself for the competition </h3>
-    <table>
+    <form action="register" method="post">
+    <table style="margin: 30px">
         <tr>
             <th> Full Name </th>
             <td> <input type="text" name="fname"> </td>
@@ -20,9 +21,9 @@
         <tr>
             <th> Gender </th>
             <td> 
-            <input type="radio" name="gender"> male 
-            <input type="radio" name="gender"> female
-            <input type="radio" name="gender"> third gender
+            <input type="radio" name="gender" value="male"> male 
+            <input type="radio" name="gender" value="female"> female
+            <input type="radio" name="gender" value="third gender"> third gender
              </td>
 
         </tr>
@@ -37,5 +38,6 @@
         </td>
 
     </table>
+    </form>
     </body>
 </html>
