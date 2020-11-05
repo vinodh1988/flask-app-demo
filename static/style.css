@@ -1,0 +1,17 @@
+th,td{
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+}
+
+th{
+    color: rgb(3, 3, 37);
+}
+
+td{
+    width: 400px;
+}
+
+h3{
+    color: rgb(140, 140, 179);
+}

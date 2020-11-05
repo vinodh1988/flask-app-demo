@@ -2,13 +2,40 @@
     <head>
         <title> Home page -Flask </title>
 <link href={{url_for('static',filename="bootstrap/css/bootstrap.min.css")}} rel="stylesheet">
+<link href={{url_for('static',filename="style.css")}} rel="stylesheet">
 <script src="{{ url_for('static', filename='jquery.js') }}"></script>
 <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
     </head>
     <body>
     <div class="alert alert-info">
-           <h1> Flask page is up and running </h1>
-           {{author}}
+           <h1> Flask  App </h1>
+           {{name}}
     </div>  
+    <h3> Register yourself for the competition </h3>
+    <table>
+        <tr>
+            <th> Full Name </th>
+            <td> <input type="text" name="fname"> </td>
+        </tr>
+        <tr>
+            <th> Gender </th>
+            <td> 
+            <input type="radio" name="gender"> male 
+            <input type="radio" name="gender"> female
+            <input type="radio" name="gender"> third gender
+             </td>
+
+        </tr>
+
+         <tr>
+            <th> City </th>
+            <td> <input type="text" name="city"> </td>
+        </tr>
+        <tr>
+           <td colspan="2" align="center">
+              <button type="submit" class="btn btn-primary">Register</button>
+        </td>
+
+    </table>
     </body>
 </html>
