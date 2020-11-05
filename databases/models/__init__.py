@@ -1,0 +1,1 @@
+from databases.models.applicants import Applicant
