@@ -11,5 +11,5 @@ def register():
     fname = request.form['fname']
     gender = request.form['gender']
     city = request.form['city']
-    return fname+" "+gender+" "+city
+    return "fname: {x}, gender: {y}, city: {z}".format(x=fname,y=gender,z=city)
 
