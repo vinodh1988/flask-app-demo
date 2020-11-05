@@ -1,4 +1,4 @@
-from config import app
+from config import app,auth
 from flask import render_template,request,redirect,url_for,jsonify
 from databases.models.applicants import Applicant,db 
 
@@ -25,6 +25,7 @@ def register():
     return home()
 
 @app.route("/applicants")
+@auth.login_required
 def applicants():
     try:
         applicants = Applicant.query.all()
