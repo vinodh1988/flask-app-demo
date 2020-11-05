@@ -4,12 +4,12 @@ from config import db
 class Applicant(db.Model):
  
 
-    __tablename__ = 'applicant'
+    __tablename__ = 'applicants'
     id = db.Column(db.Integer,
                    primary_key=True)
     fname = db.Column(db.String(50),
                          index=False,
-                         unique=True,
+                         unique=False,
                          nullable=False)
     gender = db.Column(db.String(50),
                          index=False,
