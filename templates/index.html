@@ -9,7 +9,7 @@
     <body>
     <div class="alert alert-info">
            <h1> Flask  App </h1>
-           {{name}}
+           {{state["name"]}}
     </div>  
     <h3> Register yourself for the competition </h3>
     <form action="register" method="post">
@@ -39,5 +39,29 @@
 
     </table>
     </form>
+
+    <table class="table table-hover">
+            <thead>
+                    <tr>
+                         <th> Id </th>
+                         <th> Name </th>
+                         <th> Gender </th>
+                         <th> City </th>
+
+                    </tr>
+
+            </thead>
+            <tbody>
+                  {% for applicant in state["applicants"]%}
+                  <tr>
+                      <td> {{applicant["id"]}}</td>
+                      <td> {{applicant["fname"]}}</td>
+                      <td> {{applicant["gender"]}}</td>
+                      <td> {{applicant["city"]}}</td>
+                  </tr>
+                    {% endfor %}
+            </tbody>
+
+    </table>
     </body>
 </html>
